@@ -99,10 +99,181 @@
             margin-top: 20px;
             color: #00796b; /* Darker teal for declaration text */
         }
+@media screen and (max-width:600px) {
+         
+        h1, h2, h3 {
+            color: #004d40; /* Teal color for headings */
+        }
+
+        h1 {
+            border-bottom: 2px solid #004d40; /* Teal border for main heading */
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #00796b; /* Darker teal for subheadings */
+        }
+
+        h3 {
+            margin-top: 10px;
+            color: #004d40; /* Same as h1 for consistency */
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #00796b; /* Teal background for table headers */
+            color: #fff; /* White text for table headers */
+        }
+
+        td {
+            background-color: #e0f2f1; /* Light teal background for table cells */
+        }
+
+        a {
+            color: #004d40; /* Teal color for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .contact-info i {
+            margin-right: 8px;
+            color: #004d40; /* Teal color for icons */
+        }
+
+        hr {
+            border: 1px solid #004d40; /* Teal color for horizontal rules */
+            margin: 20px 0;
+        }
+
+        .declaration {
+            font-style: italic;
+            margin-top: 20px;
+            color: #00796b; /* Darker teal for declaration text */
+        }   
+        }
+        
+@media screen and (max-width:480px) {
+    body.dark {background-color: #292c35;} /* #9b59b6 */
+
+
+         
+         h1, h2, h3 {
+             color: #004d40; /* Teal color for headings */
+         }
+ 
+         h1 {
+             border-bottom: 2px solid #004d40; /* Teal border for main heading */
+             padding-bottom: 10px;
+         }
+ 
+         h2 {
+             margin-top: 20px;
+             color: #00796b; /* Darker teal for subheadings */
+         }
+ 
+         h3 {
+             margin-top: 10px;
+             color: #004d40; /* Same as h1 for consistency */
+         }
+ 
+         img {
+             width: 150px;
+             height: auto;
+             border-radius: 50%;
+             display: block;
+             margin: 0 auto;
+         }
+ 
+         table {
+             width: 100%;
+             border-collapse: collapse;
+             margin-top: 20px;
+         }
+ 
+         th, td {
+             padding: 10px;
+             border: 1px solid #ddd;
+             text-align: left;
+         }
+ 
+         th {
+             background-color: #00796b; /* Teal background for table headers */
+             color: #fff; /* White text for table headers */
+         }
+ 
+         td {
+             background-color: #e0f2f1; /* Light teal background for table cells */
+         }
+ 
+         a {
+             color: #004d40; /* Teal color for links */
+             text-decoration: none;
+         }
+ 
+         a:hover {
+             text-decoration: underline;
+         }
+ 
+         li {
+             margin-bottom: 5px;
+         }
+ 
+         .contact-info i {
+             margin-right: 8px;
+             color: #004d40; /* Teal color for icons */
+         }
+ 
+         hr {
+             border: 1px solid #004d40; /* Teal color for horizontal rules */
+             margin: 20px 0;
+         }
+ 
+         .declaration {
+             font-style: italic;
+             margin-top: 20px;
+             color: #00796b; /* Darker teal for declaration text */
+         }   
+         }
+         body.dark {background-color: #292c35;} /* #9b59b6 */
+
+
     </style>
 </head>
 <body>
-
+    <div id="to">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <span class="ball"></span>
+        </label>
+      </div>
+    
     <div class="container">
         <img src="path-to-your-image.jpg" alt="Profile Picture">
         <h1>N. Githiyoun</h1>
@@ -183,4 +354,14 @@
     </div>
 
 </body>
+
+<script>
+    const checkbox = document.getElementById("checkbox")
+  checkbox.addEventListener("change", () => {
+    
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("colors")  
+  
+  })
+    </script>
 </html>
