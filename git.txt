@@ -1,0 +1,62 @@
+ Gitup
+• Git:-
+ . Git is a version control System.
+ . Git helps you heep track of code changes.
+ . Git is used to collaborate on code.
+ . Multiple users work for same time in Git.
+• Use Git:
+ . Git Install for Windows.
+ . Save for username and Email ID.
+ STEP-1: git config –global user.name “[firstname lastname]”
+ STEP-2: git config –global user.email “[valid-email]”
+*GitHub:-
+ . GitHub is a web-Based Git repository hosting Service.
+ . Github Alternatives,
+ 1. BitBucket
+ 2. GitBucket
+• To use GitHub:
+ . GitHub create new repository.
+ . Create new File and write a message .
+ . write a message are commit changes .
+ . Go to Terminal and STEP process are,
+ Folder Insert File:
+ STEP-1: git clone “link”.
+ STEP-2: cd githubemc1
+ STEP-3: git status
+ STEP-4: git add “filename”.
+ STEP-5: git status
+ *Add File:
+ STEP-1: git add newfile name
+ STEP-2: git commit -m “created newfile name”
+ STEP-3: git status
+ STEP-4: git push origin main
+• Modified File:
+ STEP-1: git add newfile name
+ STEP-2: git commit -m “Modified newfile name file”
+ STEP-3: git push origin main
+• Update Repositary:
+ STEP-1: git pull
+• Create new folder in the Local System:
+ STEP-1: use Git Init to create a local git repositary.
+ STEP-2: create a repositary in GitHub
+ STEP-3: use a Git remote add origin to set the origin
+ STEP-4: add some files in the GitHub
+ STEP-5: use git pull command to see the changes in the local system
+• Git Branch Created:
+STEP-1: git branch -a
+STEP-2: new branch created in main
+STEP-3: git pull
+STEP-4: again use “git branch -a”
+STEP-5: git checkout ‘branch name’
+STEP-6: again use “git branch -a”
+STEP-7: git status
+STEP-8: git add .
+STEP-9: git status
+STEP-10: git commit -m”created new file in new branch name “
+STEP-11: git push origin branch name
+STEP-12: git checkout main
+STEP-13: git checkout branch name
+STEP-14: again use “git checkout main”
+STEP-15: git diff branch name
+STEP-16: git merge newbranch name
+STEP-17: git push origin
