@@ -3,365 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        * {
             margin: 0;
             padding: 0;
-            color: #333;
+            box-sizing: border-box;
         }
-
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        body {
+            font-family: 'Arial', sans-serif;
         }
-
-        h1, h2, h3 {
-            color: #004d40; /* Teal color for headings */
-        }
-
-        h1 {
-            border-bottom: 2px solid #004d40; /* Teal border for main heading */
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            margin-top: 20px;
-            color: #00796b; /* Darker teal for subheadings */
-        }
-
-        h3 {
-            margin-top: 10px;
-            color: #004d40; /* Same as h1 for consistency */
-        }
-
-        img {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto;
-        }
-
-        table {
+        .main {
             width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+            background: url('bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            position: relative;
         }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
+        .navbar {
+            width: 86%;
+            display: flex;
+            margin: auto;
+            padding: 45px 0;
+            align-items: center;
+            justify-content: space-between;
         }
-
-        th {
-            background-color: #00796b; /* Teal background for table headers */
-            color: #fff; /* White text for table headers */
+        .navbar .logo {
+            width: 160px;
+            cursor: pointer;
         }
-
-        td {
-            background-color: #e0f2f1; /* Light teal background for table cells */
+        ul {
+            margin-top: -4%;
         }
-
-        a {
-            color: #004d40; /* Teal color for links */
+        ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 16px;
+        }
+        ul li a {
+            font-size: 16px;
+            font-weight: bold;
             text-decoration: none;
+            color: rgb(75, 79, 47);
+            transition: .4s ease;
         }
-
-        a:hover {
-            text-decoration: underline;
+        ul li a:hover {
+            color: rgb(230, 104, 59);
         }
-
-        li {
-            margin-bottom: 5px;
+        .info {
+            margin-left: 7%;
+            margin-top: 6%;
         }
-
-        .contact-info i {
-            margin-right: 8px;
-            color: #004d40; /* Teal color for icons */
+        .info h1 {
+            font-size: 65px;
+            color: rgb(36, 32, 30);
         }
-
-        hr {
-            border: 1px solid #004d40; /* Teal color for horizontal rules */
-            margin: 20px 0;
+        .info h3 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 24px;
         }
-
-        .declaration {
-            font-style: italic;
-            margin-top: 20px;
-            color: #00796b; /* Darker teal for declaration text */
+        .info span {
+            color: rgb(59, 230, 82);
         }
-@media screen and (max-width:600px) {
-         
-        h1, h2, h3 {
-            color: #004d40; /* Teal color for headings */
-        }
-
-        h1 {
-            border-bottom: 2px solid #004d40; /* Teal border for main heading */
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            margin-top: 20px;
-            color: #00796b; /* Darker teal for subheadings */
-        }
-
-        h3 {
-            margin-top: 10px;
-            color: #004d40; /* Same as h1 for consistency */
-        }
-
-        img {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-
-        th {
-            background-color: #00796b; /* Teal background for table headers */
-            color: #fff; /* White text for table headers */
-        }
-
-        td {
-            background-color: #e0f2f1; /* Light teal background for table cells */
-        }
-
-        a {
-            color: #004d40; /* Teal color for links */
+        .info a {
             text-decoration: none;
+            color: #fff;
+            background: rgb(36, 32, 30);
+            margin: 26px 0;
+            padding: 10px 18px;
+            border-radius: 10px;
+            display: inline-block;
+            transition: .4s ease;
         }
-
-        a:hover {
-            text-decoration: underline;
+        .info a:hover {
+            background: rgb(59, 174, 209);
         }
-
-        li {
-            margin-bottom: 5px;
+        .image {
+            width: 10%;
+            height: 40%;
+            position: absolute;
+            right: 100px;
+            bottom: 100px;
+            
         }
-
-        .contact-info i {
-            margin-right: 8px;
-            color: #004d40; /* Teal color for icons */
+        .image img {
+            position: absolute;
+            height: 140%;
+            left: 0%;
+            transform: translate(-80%);
+            border-radius: 1000px;
+            bottom: 0;
+            transition: left 2s ease;
         }
-
-        hr {
-            border: 1px solid #004d40; /* Teal color for horizontal rules */
-            margin: 20px 0;
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 15px;
         }
-
-        .declaration {
-            font-style: italic;
-            margin-top: 20px;
-            color: #00796b; /* Darker teal for declaration text */
-        }   
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: rgb(170, 50, rgb(0, 30, 255));
+            transition: color 0.4s ease;
         }
-        
-@media screen and (max-width:480px) {
-    body.dark {background-color: #292c35;} /* #9b59b6 */
-
-
-         
-         h1, h2, h3 {
-             color: #004d40; /* Teal color for headings */
-         }
- 
-         h1 {
-             border-bottom: 2px solid #004d40; /* Teal border for main heading */
-             padding-bottom: 10px;
-         }
- 
-         h2 {
-             margin-top: 20px;
-             color: #00796b; /* Darker teal for subheadings */
-         }
- 
-         h3 {
-             margin-top: 10px;
-             color: #004d40; /* Same as h1 for consistency */
-         }
- 
-         img {
-             width: 150px;
-             height: auto;
-             border-radius: 50%;
-             display: block;
-             margin: 0 auto;
-         }
- 
-         table {
-             width: 100%;
-             border-collapse: collapse;
-             margin-top: 20px;
-         }
- 
-         th, td {
-             padding: 10px;
-             border: 1px solid #ddd;
-             text-align: left;
-         }
- 
-         th {
-             background-color: #00796b; /* Teal background for table headers */
-             color: #fff; /* White text for table headers */
-         }
- 
-         td {
-             background-color: #e0f2f1; /* Light teal background for table cells */
-         }
- 
-         a {
-             color: #004d40; /* Teal color for links */
-             text-decoration: none;
-         }
- 
-         a:hover {
-             text-decoration: underline;
-         }
- 
-         li {
-             margin-bottom: 5px;
-         }
- 
-         .contact-info i {
-             margin-right: 8px;
-             color: #004d40; /* Teal color for icons */
-         }
- 
-         hr {
-             border: 1px solid #004d40; /* Teal color for horizontal rules */
-             margin: 20px 0;
-         }
- 
-         .declaration {
-             font-style: italic;
-             margin-top: 20px;
-             color: #00796b; /* Darker teal for declaration text */
-         }   
-         }
-         body.dark {background-color: #292c35;} /* #9b59b6 */
-
-
+        .social-icons a:hover {
+            color: rgb(230, 104, 59);
+        }
     </style>
 </head>
 <body>
-    <div id="to">
-        <input type="checkbox" class="checkbox" id="checkbox">
-        <label for="checkbox" class="checkbox-label">
-          <span class="ball"></span>
-        </label>
-      </div>
-    
-    <div class="container">
-        <img src="path-to-your-image.jpg" alt="Profile Picture">
-        <h1>N. Githiyoun</h1>
-        <p>(Master of Computer Applications)</p>
-        <hr>
-
-        <h2>Profile</h2>
-        <p>Enthusiastic and dedicated MCA student with a passion for computer applications. Seeking an entry-level opportunity to apply programming skills, software development knowledge, and problem-solving abilities in a professional setting.</p>
-        <hr>
-
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p><i class="fa-solid fa-envelope"></i>Email: <a href="mailto:githiyounn@gmail.com">githiyounn@gmail.com</a></p>
-            <p><i class="fa-solid fa-phone"></i>Phone Number: 6385766096</p>
-            <p><i class="fa-brands fa-linkedin"></i>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">www.linkedin.com/in/your-profile</a></p>
+    <div class="main">
+        <div class="navbar">
+            
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SKILL</a></li>
+                <li><a href="#">MY WORKS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
         </div>
-        <hr>
+        <div class="info">
+            <h3>Hi, I am <span>GITHIYOUN.</span></h3>
+            <h1><span>W</span>EB <span>D</span>ESIGNER</h1>
+            <h3>Web designer and developer from Madurai.<br>I create websites to help businesses do better online.</h3>
+            <a href="#">Hire me</a>
 
-        <h2>Education</h2>
-        <table>
-            <tr>
-                <th>Degree</th>
-                <th>Institution</th>
-                <th>Year</th>
-                <th>Percentage</th>
-            </tr>
-            <tr>
-                <td>Master of Computer Applications (MCA)</td>
-                <td>Madurai Kamaraj University</td>
-                <td>2023-2025</td>
-                <td>70%</td>
-            </tr>
-            <tr>
-                <td>BCA</td>
-                <td>Arul Anandar College, Madurai</td>
-                <td>2020-2023</td>
-                <td>64%</td>
-            </tr>
-            <tr>
-                <td>HSC</td>
-                <td>Keren Matriculation School, Madurai</td>
-                <td>2019-2020</td>
-                <td>67%</td>
-            </tr>
-            <tr>
-                <td>SSC</td>
-                <td>Keren Matriculation School, Madurai</td>
-                <td>2017-2018</td>
-                <td>85%</td>
-            </tr>
-        </table>
-        <hr>
-
-        <h2>Skills</h2>
-        <ul>
-            <li>Web Technologies: HTML, CSS, JavaScript</li>
-            <li>Basics in Excel</li>
-            <li>Problem-solving</li>
-            <li>Teamwork, Time Management, Adaptability</li>
-        </ul>
-        <hr>
-
-        <h2>Languages</h2>
-        <ul>
-            <li>English (Proficient)</li>
-            <li>Tamil (Fluent)</li>
-        </ul>
-        <hr>
-
-        <h2>Personal Details</h2>
-        <p>Father: P. Nagaraj</p>
-        <p>Mother: S. Manimagalai</p>
-        <p>Date of Birth: 05/05/2002</p>
-        <hr>
-
-        <h2>Declaration</h2>
-        <p class="declaration">I hereby declare that the above-mentioned information is true to the best of my knowledge and belief.</p>
+            <!-- Social Media Section -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="githi.jpg" class="me" alt="GITIYOUN">
+        </div>
     </div>
-
 </body>
-
-<script>
-    const checkbox = document.getElementById("checkbox")
-  checkbox.addEventListener("change", () => {
-    
-    document.body.classList.toggle("dark");
-    document.body.classList.toggle("colors")  
-  
-  })
-    </script>
 </html>
