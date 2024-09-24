@@ -17,7 +17,7 @@
             color: #333;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-        .dark-mode body {
+        .dark-mode {
             background-color: #121212;
             color: #f5f5f5;
         }
@@ -57,6 +57,12 @@
         ul li a:hover {
             color: rgb(230, 104, 59);
         }
+        .dark-mode ul li a {
+            color: #ddd;
+        }
+        .dark-mode ul li a:hover {
+            color: rgb(255, 179, 71);
+        }
         .info {
             margin-left: 7%;
             margin-top: 6%;
@@ -76,6 +82,9 @@
         .info span {
             color: rgb(59, 230, 82);
         }
+        .dark-mode .info span {
+            color: rgb(80, 250, 123);
+        }
         .info a {
             text-decoration: none;
             color: #fff;
@@ -88,6 +97,12 @@
         }
         .info a:hover {
             background: rgb(59, 174, 209);
+        }
+        .dark-mode .info a {
+            background: rgb(240, 98, 146);
+        }
+        .dark-mode .info a:hover {
+            background: rgb(255, 128, 171);
         }
         .image {
             width: 10%;
@@ -116,22 +131,6 @@
         }
         .social-icons a:hover {
             color: rgb(230, 104, 59);
-        }
-        /* Dark mode styles */
-        .dark-mode ul li a {
-            color: #ddd;
-        }
-        .dark-mode ul li a:hover {
-            color: rgb(255, 179, 71);
-        }
-        .dark-mode .info span {
-            color: rgb(80, 250, 123);
-        }
-        .dark-mode .info a {
-            background: rgb(240, 98, 146);
-        }
-        .dark-mode .info a:hover {
-            background: rgb(255, 128, 171);
         }
         .toggle-btn {
             position: fixed;
