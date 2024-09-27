@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>skill bar</title>
+
+<style>
+    body   {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+    }
+  * {box-sizing:border-box}
+/* thiết lập style thẻ chứa skillbar */
+ .container {
+   width: 500%; /* Toàn màn hình */
+   background-color: #ddd; /* thiết lập background */
+   margin-left: -150px;
+ }
+.skills {
+   text-align: right; /* canh chữ cho chữ */
+   padding-top: 10px; /* thêm top padding */
+   padding-bottom: 10px; /* thêmbottom padding */
+   color: #000; /* thiết lập màu chữ */
+ }
+ .html {width: 90%; background-color: #7E60BF;} 
+ .css {width: 80%; background-color: #E4B1F0;} 
+ .js {width: 65%; background-color: #FFE1FF;}
+  </style>
+
+</head>
+
+<body>
+<p>HTML</p>
+ <div class="container">
+   <div class="skills html">90%</div>
+ </div>
+<p>CSS</p>
+ <div class="container">
+   <div class="skills css">80%</div>
+ </div>
+<p>JavaScript</p>
+ <div class="container">
+   <div class="skills js">65%</div>
+ </div>
+</body>
+</html>

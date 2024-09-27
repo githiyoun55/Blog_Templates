@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myskills</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 250px;
+        }
+    .card {
+        width: 400px;
+        height: 400px;
+        background:#D2E0FB;
+        transition: 1s ease-in-out;
+        clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .card span {
+        font-weight: bold;
+        margin-top: 100px;
+        color: white;
+        text-align: center;
+        display: block;
+        font-size: 1.3em;
+      }
+      
+      .card .info {
+        font-weight: 400;
+        color: white;
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        margin: 1em;
+      }
+      
+      .card .img {
+        width: 4.8em;
+        height: 4.8em;
+        background: white;
+        border-radius: 15px;
+        margin: auto;
+      }
+      
+      .card .share {
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+      }
+      
+      .card a {
+        color: white;
+        transition: .4s ease-in-out;
+      }
+      
+      .card a:hover {
+        color: red;
+      }
+      
+      .card button {
+        padding: 0.8em 1.7em;
+        display: block;
+        margin: auto;
+        border-radius: 25px;
+        border: none;
+        font-weight: bold;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        transition: .4s ease-in-out;
+      }
+      
+      .card button:hover {
+        background: red;
+        color: white;
+        cursor: pointer;
+      }</style>
+ </head>
+ <body>
+    <div class="card">
+        
+        <span>Hotel Management System</span>
+        <span>Using HTML,CSS,JS,PHP,MYSQL</span>
+        <p class="info">This System is help us to manage hotel rooms<br>
+        It is used to generate report</p>
+        
+      </div>
+ </body>
+ </html>
