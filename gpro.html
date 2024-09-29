@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #777;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .banner {
+            background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be');
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 60px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .rooms {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .room {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .room img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .room h3 {
+            margin: 15px 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .room p {
+            color: #777;
+        }
+
+        .room a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .room a:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Hotel</h1>
+        <p>Your comfort is our priority</p>
+    </header>
+
+    <nav>
+        <a href="#rooms">Rooms</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking">Book Now</a>
+    </nav>
+
+    <div class="banner">
+        <h1>Luxury & Comfort Awaits</h1>
+    </div>
+
+    <section id="rooms">
+        <h2 class="section-title">Our Rooms</h2>
+        <div class="rooms">
+            <div class="room">
+                <img src="https://via.placeholder.com/350x200" alt="Single Room">
+                <h3>Single Room</h3>
+                <p>Our single rooms are designed to give you a comfortable stay with all the essentials you need.</p>
+                <a href="#">Book Now</a>
+            </div>
+
+            <div class="room">
+                <img src="https://via.placeholder.com/350x200" alt="Double Room">
+                <h3>Double Room</h3>
+                <p>Spacious double rooms with beautiful views, perfect for couples or business travelers.</p>
+                <a href="#">Book Now</a>
+            </div>
+
+            <div class="room">
+                <img src="https://via.placeholder.com/350x200" alt="Suite">
+                <h3>Suite</h3>
+                <p>Enjoy luxury in our suites, complete with modern amenities and exceptional service.</p>
+                <a href="#">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Hotel Management &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
